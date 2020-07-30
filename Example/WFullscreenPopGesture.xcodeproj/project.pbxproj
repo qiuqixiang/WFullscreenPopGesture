@@ -24,6 +24,11 @@
 		71719F9F1E33DC2100824A3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */; };
 		873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 873B8AEA1B1F5CCA007FD442 /* Main.storyboard */; };
 		9DD0B0C3183E6C25EA7197C4 /* Pods_WFullscreenPopGesture_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0D192176BCAC334918860A44 /* Pods_WFullscreenPopGesture_Example.framework */; };
+		D06135FC24D266FB003F90A5 /* WNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06135FB24D266FB003F90A5 /* WNavigationController.m */; };
+		D061360524D2682A003F90A5 /* Demo0ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06135FD24D2682A003F90A5 /* Demo0ViewController.m */; };
+		D061360624D2682A003F90A5 /* Demo3ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06135FE24D2682A003F90A5 /* Demo3ViewController.m */; };
+		D061360724D2682A003F90A5 /* Demo1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D06135FF24D2682A003F90A5 /* Demo1ViewController.m */; };
+		D061360824D2682A003F90A5 /* Demo2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D061360024D2682A003F90A5 /* Demo2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,13 +42,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		08A55A49DCFFC05874AEC73E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		08A55A49DCFFC05874AEC73E /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		0D192176BCAC334918860A44 /* Pods_WFullscreenPopGesture_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFullscreenPopGesture_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		20E29F51EC212B543DF8098F /* Pods-WFullscreenPopGesture_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFullscreenPopGesture_Example.debug.xcconfig"; path = "Target Support Files/Pods-WFullscreenPopGesture_Example/Pods-WFullscreenPopGesture_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		2F7AD2400BA97429C3FF2A94 /* Pods_WFullscreenPopGesture_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WFullscreenPopGesture_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		329BBF7C95A988A8EEC34263 /* Pods-WFullscreenPopGesture_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFullscreenPopGesture_Tests.release.xcconfig"; path = "Target Support Files/Pods-WFullscreenPopGesture_Tests/Pods-WFullscreenPopGesture_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		4D95DF4DA8408C92E87617BF /* Pods-WFullscreenPopGesture_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFullscreenPopGesture_Example.release.xcconfig"; path = "Target Support Files/Pods-WFullscreenPopGesture_Example/Pods-WFullscreenPopGesture_Example.release.xcconfig"; sourceTree = "<group>"; };
-		5777CE043C213A37E73D01C0 /* WFullscreenPopGesture.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = WFullscreenPopGesture.podspec; path = ../WFullscreenPopGesture.podspec; sourceTree = "<group>"; };
+		5777CE043C213A37E73D01C0 /* WFullscreenPopGesture.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = WFullscreenPopGesture.podspec; path = ../WFullscreenPopGesture.podspec; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* WFullscreenPopGesture_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WFullscreenPopGesture_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -66,7 +71,17 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7DCB8D56ED791521C39CA5B5 /* Pods-WFullscreenPopGesture_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WFullscreenPopGesture_Tests.debug.xcconfig"; path = "Target Support Files/Pods-WFullscreenPopGesture_Tests/Pods-WFullscreenPopGesture_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9A995431EB0DA6373679224F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		9A995431EB0DA6373679224F /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		D06135FA24D266FB003F90A5 /* WNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WNavigationController.h; sourceTree = "<group>"; };
+		D06135FB24D266FB003F90A5 /* WNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WNavigationController.m; sourceTree = "<group>"; };
+		D06135FD24D2682A003F90A5 /* Demo0ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo0ViewController.m; sourceTree = "<group>"; };
+		D06135FE24D2682A003F90A5 /* Demo3ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo3ViewController.m; sourceTree = "<group>"; };
+		D06135FF24D2682A003F90A5 /* Demo1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo1ViewController.m; sourceTree = "<group>"; };
+		D061360024D2682A003F90A5 /* Demo2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Demo2ViewController.m; sourceTree = "<group>"; };
+		D061360124D2682A003F90A5 /* Demo3ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo3ViewController.h; sourceTree = "<group>"; };
+		D061360224D2682A003F90A5 /* Demo1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo1ViewController.h; sourceTree = "<group>"; };
+		D061360324D2682A003F90A5 /* Demo0ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo0ViewController.h; sourceTree = "<group>"; };
+		D061360424D2682A003F90A5 /* Demo2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Demo2ViewController.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,7 +152,17 @@
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* WFULLSCREENPOPGESTUREPREFIXViewController.h */,
 				6003F5A6195388D20070C39A /* WFULLSCREENPOPGESTUREPREFIXViewController.m */,
+				D06135FA24D266FB003F90A5 /* WNavigationController.h */,
+				D06135FB24D266FB003F90A5 /* WNavigationController.m */,
 				71719F9D1E33DC2100824A3D /* LaunchScreen.storyboard */,
+				D061360324D2682A003F90A5 /* Demo0ViewController.h */,
+				D06135FD24D2682A003F90A5 /* Demo0ViewController.m */,
+				D061360224D2682A003F90A5 /* Demo1ViewController.h */,
+				D06135FF24D2682A003F90A5 /* Demo1ViewController.m */,
+				D061360424D2682A003F90A5 /* Demo2ViewController.h */,
+				D061360024D2682A003F90A5 /* Demo2ViewController.m */,
+				D061360124D2682A003F90A5 /* Demo3ViewController.h */,
+				D06135FE24D2682A003F90A5 /* Demo3ViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
 				6003F594195388D20070C39A /* Supporting Files */,
 			);
@@ -193,7 +218,6 @@
 				7DCB8D56ED791521C39CA5B5 /* Pods-WFullscreenPopGesture_Tests.debug.xcconfig */,
 				329BBF7C95A988A8EEC34263 /* Pods-WFullscreenPopGesture_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +282,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -364,9 +389,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D061360724D2682A003F90A5 /* Demo1ViewController.m in Sources */,
 				6003F59E195388D20070C39A /* WFULLSCREENPOPGESTUREPREFIXAppDelegate.m in Sources */,
+				D06135FC24D266FB003F90A5 /* WNavigationController.m in Sources */,
 				6003F5A7195388D20070C39A /* WFULLSCREENPOPGESTUREPREFIXViewController.m in Sources */,
+				D061360624D2682A003F90A5 /* Demo3ViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
+				D061360824D2682A003F90A5 /* Demo2ViewController.m in Sources */,
+				D061360524D2682A003F90A5 /* Demo0ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

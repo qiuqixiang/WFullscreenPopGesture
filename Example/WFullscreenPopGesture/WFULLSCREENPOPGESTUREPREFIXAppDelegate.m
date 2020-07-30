@@ -7,13 +7,40 @@
 //
 
 #import "WFULLSCREENPOPGESTUREPREFIXAppDelegate.h"
-
+#import "WFULLSCREENPOPGESTUREPREFIXViewController.h"
+#import "WNavigationController.h"
 @implementation WFULLSCREENPOPGESTUREPREFIXAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
+        self.window.backgroundColor = UIColor.whiteColor;
+        
+        [[UINavigationBar appearance] setBarStyle:UIBarStyleBlack];
+        [UINavigationBar appearance].shadowImage = [UIImage new];
+        [[UINavigationBar appearance] setBackgroundImage:[self imageWithColor:[UIColor orangeColor] andSize:CGSizeMake(1, 1)] forBarMetrics:0];
+        [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:UIColor.blueColor,
+        NSFontAttributeName:[UIFont boldSystemFontOfSize:17.0f]}];
+    //    [UINavigationBar appearance].translucent = NO;
+        
+        
+        WNavigationController *navi = [[WNavigationController alloc] initWithRootViewController:[WFULLSCREENPOPGESTUREPREFIXViewController new]];
+           navi.modalPresentationStyle = UIModalPresentationFullScreen;
+        self.window.rootViewController = navi;
     // Override point for customization after application launch.
     return YES;
+}
+
+- (UIImage *)imageWithColor:(UIColor *)color andSize:(CGSize)size
+{
+    CGRect rect = CGRectMake(0.0f, 0.0f, size.width, size.height);
+    UIGraphicsBeginImageContext(rect.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    CGContextSetFillColorWithColor(context, [color CGColor]);
+    CGContextFillRect(context, rect);
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

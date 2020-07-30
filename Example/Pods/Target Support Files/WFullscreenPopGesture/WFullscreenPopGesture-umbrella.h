@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UINavigationController+WFullscreenPopGesture.h"
 
 FOUNDATION_EXPORT double WFullscreenPopGestureVersionNumber;
 FOUNDATION_EXPORT const unsigned char WFullscreenPopGestureVersionString[];
